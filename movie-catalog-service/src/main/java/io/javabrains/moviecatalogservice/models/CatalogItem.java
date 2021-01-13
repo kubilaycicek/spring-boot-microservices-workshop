@@ -3,9 +3,9 @@ package io.javabrains.moviecatalogservice.models;
 public class CatalogItem {
     private String name;
     private String description;
-    private int rating;
+    private String rating;
 
-    public CatalogItem(String name, String description, int rating) {
+    public CatalogItem(String name, String description, String rating) {
         this.name = name;
         this.description = description;
         this.rating = rating;
@@ -27,11 +27,11 @@ public class CatalogItem {
         this.description = description;
     }
 
-    public int getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 }
